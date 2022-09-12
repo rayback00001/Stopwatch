@@ -2,4 +2,32 @@
   margin: 0;
   padding: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.stopwatch-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+}
+.stopwatch-container p {
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  margin-bottom: 100px;
+}
+
+button {
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 15px 48px;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+button:hover {
+  border-color: black;
 }/*# sourceMappingURL=main.css.map */
