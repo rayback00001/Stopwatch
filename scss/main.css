@@ -1,18 +1,25 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .stopwatch-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: aqua;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #16213E;
   height: 100vh;
   width: 100%;
   position: absolute;
 }
+
 .stopwatch-container p {
   text-align: center;
   color: white;
@@ -21,8 +28,8 @@
 }
 
 button {
-  background-color: transparent;
-  border: 1px solid white;
+  background-color: #E94560;
+  border: 1px solid #533483;
   padding: 15px 48px;
   border-radius: 9px;
   cursor: pointer;
@@ -30,4 +37,5 @@ button {
 
 button:hover {
   border-color: black;
-}/*# sourceMappingURL=main.css.map */
+}
+/*# sourceMappingURL=main.css.map */
