@@ -7,8 +7,7 @@ let seconds = 0;
 let milli = 0;
 
 
-
-btnStart.addEventListener('click',()=>{
+function startTimer(){
     milli++;
     if(milli <= 9)
     {
@@ -33,32 +32,11 @@ btnStart.addEventListener('click',()=>{
     {
         Seconds.innerHTML = seconds;
     }
+}
+
+btnStart.addEventListener('click',()=>{
+    setInterval(startTimer,10);
 });
 
 
-/*
-function startTimer(){
-    milli++;
-    if(milli <= 9)
-    {
-        Milli.innerHTML = '0' + milli;
-    }
 
-    else if(milli > 9)
-    {
-        Milli.innerHTML = milli;
-    }
-
-    else if(milli > 99)
-    {
-        seconds++;
-        Seconds.innerHTML = '0' + seconds;
-    }
-
-    else if(seconds > 9)
-    {
-        Seconds.innerHTML = seconds;
-    }
-
-}
-*/
