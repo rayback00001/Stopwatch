@@ -38,4 +38,8 @@ button {
 button:hover {
   border-color: black;
 }
+
+button:disabled {
+  color: black;
+}
 /*# sourceMappingURL=main.css.map */

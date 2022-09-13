@@ -35,20 +35,23 @@ function startTimer(){
     }
 }
 
-btnStart.addEventListener('click',() =>{
-     interval = setInterval(startTimer,10);
+  btnStart.addEventListener('click',() =>{
+     interval = setInterval(startTimer,10); 
+     btnStart.disabled = true;
 });
 
-btnStop.addEventListener('click', () =>{
+  btnStop.addEventListener('click', () =>{
     clearInterval(interval);
+    btnStart.disabled = false;
 });
 
-btnReset.addEventListener('click', () =>{
+  btnReset.addEventListener('click', () =>{
     milli = 0;
     seconds = 0;
     Milli.innerHTML = milli;
     Seconds.innerHTML = seconds;
 });
+
 
 
 
