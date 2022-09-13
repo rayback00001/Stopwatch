@@ -5,6 +5,7 @@ let btnStop = document.querySelector('.btn-stop');
 let btnReset = document.querySelector('.btn-reset');
 let seconds = 0;
 let milli = 0;
+let interval;
 
 
 function startTimer(){
@@ -35,8 +36,12 @@ function startTimer(){
 }
 
 btnStart.addEventListener('click',()=>{
-    setInterval(startTimer,10);
+     interval = setInterval(startTimer,10);
 });
+
+btnStop.addEventListener('click', () =>{
+    clearInterval(interval);
+})
 
 
 
